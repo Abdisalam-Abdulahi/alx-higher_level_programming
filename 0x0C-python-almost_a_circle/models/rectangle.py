@@ -97,4 +97,7 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """
+        calculates the arae of the reactangle
+        """
         return self.width * self.height
