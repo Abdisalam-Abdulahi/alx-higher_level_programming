@@ -13,57 +13,65 @@ class Rectangle(Base):
     which is subclass of base
     """
 
-    def get_width(self):
+    def __init__(self, width, height, x=0, y=0, id=None):
+        super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+
+    @property
+    def width(self):
         """
         retreives width
         """
         return self.__width
 
-    def set_width(self, width):
+    @width.setter
+    def width(self, width):
         """
         sets width
         """
         self.__width = width
 
-    def get_height(self):
+    @property
+    def height(self):
         """
         retreives height
         """
         return self.__height
 
-    def set_height(self, height):
+    @height.setter
+    def height(self, height):
         """
         sets height
         """
         self.__height = height
 
-    def get_x(self):
+    @property
+    def x(self):
         """
         retreives x
         """
         return self.__x
 
-    def set_x(self, x):
+    @x.setter
+    def x(self, x):
         """
         sets x
         """
         self.__x = x
 
-    def get_y(self):
+    @property
+    def y(self):
         """
         retreives y
         """
         return self.__y
 
-    def set_y(self, y):
+    @y.setter
+    def y(self, y):
         """
         sets y
         """
-        self.__y = y
-
-    def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
         self.__y = y
