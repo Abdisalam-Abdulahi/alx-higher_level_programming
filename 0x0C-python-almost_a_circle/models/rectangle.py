@@ -101,3 +101,12 @@ class Rectangle(Base):
         calculates the arae of the reactangle
         """
         return self.width * self.height
+
+    def display(self):
+        """
+        dispaly reactangle using "#"
+        """
+        for h in range(self.height):
+            for w in range(self.width):
+                print("#", end="")
+            print()
