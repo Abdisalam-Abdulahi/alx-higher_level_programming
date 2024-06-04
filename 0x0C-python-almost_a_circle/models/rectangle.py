@@ -106,7 +106,14 @@ class Rectangle(Base):
         """
         dispaly reactangle using "#"
         """
+        for i in range(self.y):
+            print(" ")
+
         for h in range(self.height):
+
+            for i in range(self.x):
+                print(" ", end="")
+
             for w in range(self.width):
                 print("#", end="")
             print()
