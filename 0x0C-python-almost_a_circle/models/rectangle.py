@@ -107,7 +107,7 @@ class Rectangle(Base):
         dispaly reactangle using "#"
         """
         for i in range(self.y):
-            print(" ")
+            print("")
 
         for h in range(self.height):
 
