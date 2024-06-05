@@ -156,3 +156,10 @@ class Rectangle(Base):
                 self.x = v
             if 'y' == k:
                 self.y = v
+
+    def to_dictionary(self):
+        """
+        Returns dictionary representation of Reactangle class
+        """
+        return {'id': self.id, 'width': self.width, 'height': self.height,
+                'x': self.x, 'y': self.y}
