@@ -62,9 +62,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes.
-
-        Args:
-            **dictionary (dict): Key/value pairs of attributes to initialize.
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
@@ -77,12 +74,6 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Return a list of classes instantiated from a file of JSON strings.
-
-        Reads from `<cls.__name__>.json`.
-
-        Returns:
-            If the file does not exist - an empty list.
-            Otherwise - a list of instantiated classes.
         """
         filename = str(cls.__name__) + ".json"
         try:
