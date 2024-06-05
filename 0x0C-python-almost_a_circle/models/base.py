@@ -37,6 +37,8 @@ class Base:
         """
          writes the JSON string representation of list_objs to a file
         """
+        if list_objs is None:
+            list_objs = []
         Jison = []
         for i in list_objs:
             Jison.append(i.to_dictionary())
