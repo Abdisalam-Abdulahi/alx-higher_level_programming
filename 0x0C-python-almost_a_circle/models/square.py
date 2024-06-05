@@ -66,3 +66,10 @@ class Square(Rectangle):
                 self.x = v
             if 'y' == k:
                 self.y = v
+
+    def to_dictionary(self):
+        """
+        Returns dictionary representation of Reactangle class
+        """
+        return {'id': self.id, 'size': self.size,
+                'x': self.x, 'y': self.y}
